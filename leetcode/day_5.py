@@ -103,3 +103,6 @@ def fix_names(users):
     users['name'] = users['name'].str.capitalize()
     return users.sort_values('user_id')
 print(fix_names(users))
+
+
+# lambda表达式使用:

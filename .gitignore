@@ -1,0 +1,17 @@
+# 图片输出
+fig/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# 编辑器
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# 环境
+.env
+venv/
