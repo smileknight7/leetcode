@@ -207,6 +207,9 @@ activities = pd.DataFrame({
 def categorize_products(activities):
     df = activities.groupby('sell_date').agg(num_sold=('product', 'nunique'), products=('product', lambda x: ','.join(sorted(x.unique())))).reset_index()
     return df.sort_values('sell_date')
+
+print('activities df')
+print(activities)
 print(categorize_products(activities))
 
 
@@ -291,6 +294,10 @@ def isMonotonic(nums):                      # 这道题不采用判断方向再�
             increasing = False
     return increasing or decreasing
 print(isMonotonic(nums))
+
+
+
+
 
 
 s = "Hello World"

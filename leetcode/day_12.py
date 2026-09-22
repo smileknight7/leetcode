@@ -58,7 +58,7 @@ courses = pd.DataFrame({
 })
 
 def find_classes(courses):
-    df = courses.groupby('class').size().reset_index(name='student_count')              # 这世界上会忽略除了goupby()之外的其他列表
+    df = courses.groupby('class').size().reset_index(name='student_count')              # 这实际上会忽略除了goupby()之外的其他列表
     result = df[df['student_count'] >= 5][['class']]
     return result
 
