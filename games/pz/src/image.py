@@ -14,7 +14,7 @@ class Image(pygame.sprite.Sprite):
 
     def updateImage(self):
         path = self.pathFmt
-        if self.pathIndexCount !=0:
+        if self.pathIndexCount !=0:                             # 则例哦按段是否使用帧动画
             path = self.pathFmt % self.pathindex
         self.image = pygame.image.load(path)
         if self.size:
